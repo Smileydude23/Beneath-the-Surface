@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://7aaptq5sxxhr"]
+
+[ext_resource type="Texture2D" uid="uid://bs3cnenig647f" path="res://Beneath the Surface/Assets/UtS Bubble Gum.png" id="1_ihpft"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(577, 281)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
+[node name="UtSBubbleGum" type="Sprite2D" parent="."]
+position = Vector2(-4, 6)
+texture = ExtResource("1_ihpft")
