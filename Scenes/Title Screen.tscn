@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cdbqprfe186j3"]
 
 [ext_resource type="Script" uid="uid://c71of5qddpk5o" path="res://Beneath the Surface/Scripts/title_screen.gd" id="1_po227"]
-[ext_resource type="Texture2D" uid="uid://bjr2aqug1fe5p" path="res://Beneath the Surface/Assets/Under the surface glomb .png" id="2_p00s4"]
+[ext_resource type="Texture2D" uid="uid://clrm2l2evt4f0" path="res://Beneath the Surface/Assets/Candy Cartel title screen.png" id="2_p00s4"]
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
@@ -14,25 +14,27 @@ script = ExtResource("1_po227")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1145.0
-offset_bottom = 643.0
+offset_left = 3.0
+offset_top = -8.0
+offset_right = 1152.1937
+offset_bottom = 776.0
 texture = ExtResource("2_p00s4")
 expand_mode = 1
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 457.0
-offset_top = 220.0
-offset_right = 609.0
-offset_bottom = 276.0
+offset_left = 464.0
+offset_top = 400.0
+offset_right = 616.0
+offset_bottom = 456.0
 text = "Start Game"
 
 [node name="QuitButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 457.0
-offset_top = 320.0
-offset_right = 609.0
-offset_bottom = 376.0
+offset_left = 464.0
+offset_top = 509.0
+offset_right = 616.0
+offset_bottom = 565.0
 text = "Quit Game"
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
