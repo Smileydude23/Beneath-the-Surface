@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://ery3674s5n5h"]
+[gd_scene load_steps=5 format=3 uid="uid://ery3674s5n5h"]
 
-[ext_resource type="Texture2D" uid="uid://bpxfxjx3sc6mc" path="res://Assets/UndertaleTextbox.png" id="1_ke1vn"]
-[ext_resource type="FontFile" uid="uid://bo36pkmjdcibx" path="res://Assets/pixel_operator/PixelOperator.ttf" id="2_v87v2"]
-[ext_resource type="Script" uid="uid://cu6mbnoh10n5" path="res://Scenes/cutscenelabel.gd" id="3_pilj3"]
+[ext_resource type="Texture2D" uid="uid://b3lj8dsij5owl" path="res://Beneath the Surface/Assets/sludge factory.png" id="1_d8mil"]
+[ext_resource type="Texture2D" uid="uid://d4d72ciywaf22" path="res://Beneath the Surface/Assets/candy factory.png" id="2_715do"]
+[ext_resource type="FontFile" uid="uid://bo36pkmjdcibx" path="res://Beneath the Surface/Assets/pixel_operator/PixelOperator.ttf" id="2_v87v2"]
+[ext_resource type="Script" uid="uid://cu6mbnoh10n5" path="res://Beneath the Surface/Scenes/cutscenelabel.gd" id="3_pilj3"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -10,27 +11,31 @@
 
 [node name="Node" type="Node" parent="."]
 
-[node name="TextureRect" type="TextureRect" parent="Node"]
-offset_left = 354.0
-offset_top = 48.0
-offset_right = 803.74164
-offset_bottom = 174.0
-texture = ExtResource("1_ke1vn")
+[node name="sludge factory" type="TextureRect" parent="Node"]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 2303.2493
+offset_bottom = 646.0
+texture = ExtResource("1_d8mil")
 expand_mode = 1
 
+[node name="candy factory" type="TextureRect" parent="Node"]
+offset_left = -58.0
+offset_top = 4.0
+offset_right = 1225.7805
+offset_bottom = 642.0
+texture = ExtResource("2_715do")
+
 [node name="cutscenelabel" type="Label" parent="Node"]
-offset_left = 401.0
-offset_top = 68.0
-offset_right = 780.0
-offset_bottom = 154.0
+offset_left = 234.0
+offset_top = 467.0
+offset_right = 934.0
+offset_bottom = 596.0
 theme_override_fonts/font = ExtResource("2_v87v2")
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 37
 text = "It is 2067, and candy is banned from every corner of the world. The people crave sugar, and you will provide."
 autowrap_mode = 3
 visible_characters = 0
+visible_characters_behavior = 1
 visible_ratio = 0.0
 script = ExtResource("3_pilj3")
-
-[node name="Timer" type="Timer" parent="Node/cutscenelabel"]
-
-[connection signal="timeout" from="Node/cutscenelabel/Timer" to="Node/cutscenelabel" method="_on_timer_timeout"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjr2aqug1fe5p"
-path="res://.godot/imported/Under the surface glomb .png-d757b4842ce2f349fcd94eaf6c6c6a23.ctex"
+uid="uid://d4d72ciywaf22"
+path="res://.godot/imported/candy factory.png-e3c60af05310ac69284b649d2006f6fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Beneath the Surface/Under the surface glomb .png"
-dest_files=["res://.godot/imported/Under the surface glomb .png-d757b4842ce2f349fcd94eaf6c6c6a23.ctex"]
+source_file="res://Beneath the Surface/Assets/candy factory.png"
+dest_files=["res://.godot/imported/candy factory.png-e3c60af05310ac69284b649d2006f6fa.ctex"]
 
 [params]
 
