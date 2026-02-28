@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=3 uid="uid://ery3674s5n5h"]
 
-[ext_resource type="Script" uid="uid://dwquau1jjrel4" path="res://Beneath the Surface/Scenes/cutscene.gd" id="1_2hj18"]
+[ext_resource type="Script" uid="uid://dwquau1jjrel4" path="res://Beneath the Surface/Scripts/cutscene.gd" id="1_2hj18"]
 [ext_resource type="Texture2D" uid="uid://d4d72ciywaf22" path="res://Beneath the Surface/Assets/candy factory.png" id="2_715do"]
 [ext_resource type="Texture2D" uid="uid://dqhc4k76kyod6" path="res://Beneath the Surface/Assets/sludge factory textless.png" id="2_sj0ws"]
 [ext_resource type="FontFile" uid="uid://bo36pkmjdcibx" path="res://Beneath the Surface/Assets/pixel_operator/PixelOperator.ttf" id="2_v87v2"]
-[ext_resource type="Script" uid="uid://doqhc2yxik435" path="res://Beneath the Surface/Scenes/scrollscreen.gd" id="3_a0qri"]
-[ext_resource type="Script" uid="uid://cu6mbnoh10n5" path="res://Beneath the Surface/Scenes/cutscenelabel.gd" id="3_pilj3"]
-[ext_resource type="Script" uid="uid://b1tac0ec8yr10" path="res://Beneath the Surface/Scenes/cutscenelabel_2.gd" id="7_a0qri"]
-[ext_resource type="Texture2D" uid="uid://dkx3jsstumfe1" path="res://Beneath the Surface/Assets/candy factory broken.png" id="8_khyhk"]
-[ext_resource type="Script" uid="uid://deiluxx40tacp" path="res://Beneath the Surface/Scenes/cutscenelabel_3.gd" id="9_o2yem"]
+[ext_resource type="Script" uid="uid://doqhc2yxik435" path="res://Beneath the Surface/Scripts/scrollscreen.gd" id="3_a0qri"]
+[ext_resource type="Script" uid="uid://cu6mbnoh10n5" path="res://Beneath the Surface/Scripts/cutscenelabel.gd" id="3_pilj3"]
+[ext_resource type="Script" uid="uid://b1tac0ec8yr10" path="res://Beneath the Surface/Scripts/cutscenelabel_2.gd" id="7_a0qri"]
+[ext_resource type="Texture2D" uid="uid://bs3cnenig647f" path="res://Beneath the Surface/Assets/UtS Bubble Gum.png" id="8_sj0ws"]
+[ext_resource type="Script" uid="uid://deiluxx40tacp" path="res://Beneath the Surface/Scripts/cutscenelabel_3.gd" id="9_o2yem"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -66,9 +66,12 @@ script = ExtResource("7_a0qri")
 [node name="scene 3" type="Node" parent="Cutscene"]
 
 [node name="broken factory" type="TextureRect" parent="Cutscene/scene 3"]
-offset_right = 1237.0
-offset_bottom = 645.0
-texture = ExtResource("8_khyhk")
+offset_left = -64.0
+offset_top = 23.0
+offset_right = 1173.0
+offset_bottom = 668.0
+texture = ExtResource("8_sj0ws")
+expand_mode = 1
 
 [node name="cutscenelabel3" type="Label" parent="Cutscene/scene 3"]
 offset_left = 440.0
