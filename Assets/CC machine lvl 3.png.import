@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf8uyl05cb3qs"
-path="res://.godot/imported/CC Man animation.png-0bb39594a8399fc27d737a0653fbd70b.ctex"
+uid="uid://b1cfcr55t13ft"
+path="res://.godot/imported/CC machine lvl 3.png-e254c821e83e7093a78a1296b9f63a92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Beneath the Surface/Assets/CC Man animation.png"
-dest_files=["res://.godot/imported/CC Man animation.png-0bb39594a8399fc27d737a0653fbd70b.ctex"]
+source_file="res://Beneath the Surface/Assets/CC machine lvl 3.png"
+dest_files=["res://.godot/imported/CC machine lvl 3.png-e254c821e83e7093a78a1296b9f63a92.ctex"]
 
 [params]
 
