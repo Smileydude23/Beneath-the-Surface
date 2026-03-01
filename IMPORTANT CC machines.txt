@@ -1,0 +1,18 @@
+Quality = 1.5x value
+Gold = 3x value
+burnt = 0.5x value
+
+
+
+Whisk: 1x speed, 1% chance of gold.
+
+Sifter: 1.5x speed, 50% of quality
+
+Tornado: 2.5x speed
+
+UFO: 3x speed, 5% Gold, 30% Quality, 15% burnt
+
+Golden Whisk: 2x speed, 50% chance of gold
+
+
+
