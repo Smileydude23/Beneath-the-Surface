@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://dmphfs27q7t6l"]
 
 [ext_resource type="Script" uid="uid://bbbbcx1i6d0s1" path="res://Beneath the Surface/Scenes/player.gd" id="1_wyiof"]
-[ext_resource type="Texture2D" uid="uid://bg3a5m5ksy30n" path="res://Beneath the Surface/Assets/CC Man animation.png" id="2_wyiof"]
+[ext_resource type="Texture2D" uid="uid://cf8uyl05cb3qs" path="res://Beneath the Surface/Assets/CC Man animation.png" id="2_wyiof"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wyiof"]
 atlas = ExtResource("2_wyiof")
@@ -76,7 +76,7 @@ animations = [{
 radius = 125.0
 height = 396.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_wyiof")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
