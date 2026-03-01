@@ -33,7 +33,7 @@ offset_right = 997.0
 offset_bottom = 618.0
 theme_override_fonts/font = ExtResource("2_v87v2")
 theme_override_font_sizes/font_size = 37
-text = "It is 2067, and candy is banned from every corner of the world. The people crave sugar, and you will provide."
+text = "It is 2067. Sweets and fun are banned from every corner of the world. Suffering is rampant."
 autowrap_mode = 3
 visible_characters = 0
 visible_characters_behavior = 1
@@ -56,7 +56,7 @@ offset_right = 934.0
 offset_bottom = 596.0
 theme_override_fonts/font = ExtResource("2_v87v2")
 theme_override_font_sizes/font_size = 37
-text = "But beneath the surface, a criminal empire awaits, one that provides candy to the people. It will be risky but it will pay aplenty."
+text = "You are a sludge restaurant owner, but under your business, you made candies galore."
 autowrap_mode = 3
 visible_characters = 0
 visible_characters_behavior = 1
@@ -74,17 +74,17 @@ texture = ExtResource("8_sj0ws")
 expand_mode = 1
 
 [node name="cutscenelabel3" type="Label" parent="Cutscene/scene 3"]
-offset_left = 306.0
-offset_top = 539.0
-offset_right = 869.0
-offset_bottom = 700.0
+offset_left = 274.0
+offset_top = 530.0
+offset_right = 873.0
+offset_bottom = 691.0
 theme_override_fonts/font = ExtResource("2_v87v2")
 theme_override_font_sizes/font_size = 37
-text = "But it appears you still have a lot of work to do... Don't worry you got this!"
+text = "However, you need to do some renovating after the flood. Get to work!"
 autowrap_mode = 3
 script = ExtResource("9_o2yem")
 
-[node name="skip label" type="Label" parent="Cutscene/scene 3"]
+[node name="skip label" type="Label" parent="Cutscene"]
 offset_left = 957.0
 offset_top = 589.0
 offset_right = 1115.0

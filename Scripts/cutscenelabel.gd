@@ -1,6 +1,6 @@
 extends Label
 
-@export var type_speed := 0.04
+@export var type_speed := 0.01
 
 var text_length := 0
 var skipping := false
@@ -20,7 +20,6 @@ func type_text() -> void:
 	if skipping:
 		visible_characters = text_length
 	skipping = false
-
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_accept"):
 		skipping = true

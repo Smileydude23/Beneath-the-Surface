@@ -1,6 +1,6 @@
 extends Label
 
-@export var type_speed := 0.04
+@export var type_speed := 0.01
 
 var text_length := 0
 var skipping := false
@@ -8,7 +8,8 @@ var skipping := false
 func _ready() -> void:
 	visible_characters = 0
 	skipping = false
-	await get_tree().create_timer(12.9).timeout
+	await get_tree().create_timer(6.7).timeout
+	#SIX SEVENNNNN :P :P :P
 	type_text()
 
 func type_text() -> void:
