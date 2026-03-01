@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://duintl75p3eg5"]
+
+[ext_resource type="Texture2D" uid="uid://bpxfxjx3sc6mc" path="res://Beneath the Surface/Assets/UndertaleTextbox.png" id="1_1ja6y"]
+[ext_resource type="Texture2D" uid="uid://bjr2aqug1fe5p" path="res://Beneath the Surface/Assets/Under the surface glomb .png" id="2_n6qhu"]
+[ext_resource type="PackedScene" uid="uid://dmphfs27q7t6l" path="res://Beneath the Surface/Scenes/Player.tscn" id="3_i24l4"]
+
+[node name="Glomb restaurant" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-1085, 971, -348, 906, 373, 914, 1136, 857, 1246, 887, 1148, -468, 1326, 963, -1135, 1051, -1150, -373)
+
+[node name="UndertaleTextbox" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(114, -73)
+scale = Vector2(6.1621985, 15.894734)
+texture = ExtResource("1_1ja6y")
+
+[node name="UnderTheSurfaceGlomb" type="Sprite2D" parent="StaticBody2D/UndertaleTextbox"]
+position = Vector2(-8.438547, -3.5860934)
+scale = Vector2(0.16227974, 0.06291392)
+texture = ExtResource("2_n6qhu")
+
+[node name="Player" parent="." instance=ExtResource("3_i24l4")]
+position = Vector2(-444, 710)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(5, -122)
+ignore_rotation = false
+zoom = Vector2(0.5, 0.3)

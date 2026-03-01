@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://bdr5cedlywlh5"]
+
+[ext_resource type="Texture2D" uid="uid://bs3cnenig647f" path="res://Beneath the Surface/Assets/UtS Bubble Gum.png" id="1_k57xx"]
+[ext_resource type="PackedScene" uid="uid://dmphfs27q7t6l" path="res://Beneath the Surface/Scenes/Player.tscn" id="2_45rbr"]
+[ext_resource type="Script" uid="uid://bb4hets2wa1y" path="res://Beneath the Surface/Scenes/ladder.gd" id="3_op7rp"]
+[ext_resource type="Texture2D" uid="uid://dyyooqtkr6dei" path="res://Beneath the Surface/Assets/icon.svg" id="4_2rpie"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wue7s"]
+size = Vector2(538, 1254.75)
+
+[node name="Bubble gum" type="Node2D"]
+
+[node name="UtSBubbleGum" type="Sprite2D" parent="."]
+position = Vector2(-11, 44)
+texture = ExtResource("1_k57xx")
+
+[node name="Player" parent="." instance=ExtResource("2_45rbr")]
+position = Vector2(427, 619)
+
+[node name="Ground_Borders" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Ground_Borders"]
+position = Vector2(-2, 61)
+polygon = PackedVector2Array(-1814, -1377, -1886, 1364, 1808, 1370, 1816, -1366, 1700, -1367, 1727, 767, -933, 763, -951, 303, -1503, 254, -1530, 769, -1775, 780)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-16, 17)
+zoom = Vector2(0.32, 0.25)
+
+[node name="ladder" type="Node2D" parent="."]
+
+[node name="Ladder" type="Area2D" parent="ladder"]
+position = Vector2(-1281, -636)
+script = ExtResource("3_op7rp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ladder/Ladder"]
+position = Vector2(0, -59.375)
+shape = SubResource("RectangleShape2D_wue7s")
+
+[node name="popup_ui" type="TextureRect" parent="ladder/Ladder"]
+offset_left = 222.0
+offset_top = 308.0
+offset_right = 350.0
+offset_bottom = 436.0
+texture = ExtResource("4_2rpie")
+
+[connection signal="body_shape_entered" from="ladder/Ladder" to="ladder/Ladder" method="_on_body_shape_entered"]
+[connection signal="body_shape_exited" from="ladder/Ladder" to="ladder/Ladder" method="_on_body_shape_exited"]

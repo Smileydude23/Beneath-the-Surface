@@ -27,4 +27,4 @@ func switch_to_screen3() -> void:
 	typewriter3.type_text()
 	await get_tree().create_timer(4).timeout
 	screen3.hide()
-	await get_tree().change_scene_to_file("res://Beneath the Surface/Scenes/game.tscn")
+	await get_tree().change_scene_to_file("res://Beneath the Surface/Scenes/bubble_gum.tscn")

@@ -8,7 +8,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wue7s"]
 size = Vector2(538, 1375.5)
 
-[node name="Game" type="Node2D"]
+[node name="Bubble gum" type="Node2D"]
 
 [node name="UtSBubbleGum" type="Sprite2D" parent="."]
 position = Vector2(-11, 44)
@@ -41,5 +41,3 @@ shape = SubResource("RectangleShape2D_wue7s")
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("4_wue7s")
-
-[connection signal="body_entered" from="ladder/Ladder" to="ladder" method="_on_ladder_body_entered"]
